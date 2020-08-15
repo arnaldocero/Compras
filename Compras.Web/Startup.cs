@@ -33,6 +33,7 @@ namespace Compras.Web
             {
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddTransient<SeedDb>();
 
 
 
